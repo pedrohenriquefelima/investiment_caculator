@@ -11,6 +11,7 @@ function App() {
   const addYearlyDataHandler = (event) => {
     console.log(event);
     if(event === 'reset'){
+      setYearlyData([]);
       return;
     }
     for (let i = 0; i < event.duration; i++) {
@@ -22,6 +23,7 @@ function App() {
             yearlyInterest: yearlyInterest,
             savingsEndOfYear: event.currentSavings,
             yearlyContribution: event.yearlyContribution,
+            currentSavings: event.currentSavings
           }]
       });
     }
