@@ -49,11 +49,11 @@ const Form = (props) => {
           <div className={styles["input-group"]}>
             <p>
               <label htmlFor="current-savings">Current Savings ($)</label>
-              <input type="number" id="current-savings" value={data.currentSavings} onChange={handleUserInput}/>
+              <input type="number" id="current-savings" onChange={handleUserInput}/>
             </p>
             <p>
               <label htmlFor="yearly-contribution">Yearly Savings ($)</label>
-              <input type="number" id="yearly-contribution" value={data.yearlyContribution} onChange={handleUserInput}/>
+              <input type="number" id="yearly-contribution" onChange={handleUserInput}/>
             </p>
           </div>
           <div className={styles["input-group"]}>
@@ -61,11 +61,11 @@ const Form = (props) => {
               <label htmlFor="expected-return">
                 Expected Interest (%, per year)
               </label>
-              <input type="number" id="expected-return" value={data.expectedReturn} onChange={handleUserInput}/>
+              <input type="number" id="expected-return" onChange={handleUserInput}/>
             </p>
             <p>
               <label htmlFor="duration">Investment Duration (years)</label>
-              <input type="number" id="duration" value={data.duration} onChange={handleUserInput}/>
+              <input type="number" id="duration" onChange={handleUserInput}/>
             </p>
           </div>
           <p className={styles.actions}>
